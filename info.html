@@ -1,0 +1,441 @@
+<html>
+    
+    <head>
+        <link href="mystyle.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+        <script src="data.json"></script>
+    </head>
+    
+    <body>
+        
+<div id="navbar">
+  <a href="sources.html">Official Sources</a>    
+  <a href="games.html">Examples in Film + Media</a>
+  <a href="info.html">Info + Stats</a>
+  <a href="index.html">Main Menu</a>
+</div>
+  
+<a id="Title"></a>
+        
+<style>
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.top {
+  background-color: lightpink;
+  color: white;
+}
+
+.bottom {
+  background-color: indianred;
+  color: white;
+}
+</style>
+    
+    
+<body>
+<div class="icon-bar">
+<a href="#Title" class="top"></a> 
+<a href="#About" class="bottom"></a>  
+</div>
+</body>
+    
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky")
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+        
+<br>
+<br>
+<br>
+
+<div style="padding-left:20px">
+  <center><h1>Information and Statistics</h1></center>
+</div>
+
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 60%;
+  padding: 20px;
+}
+
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+
+
+</style>
+
+<br>   
+    
+<center>
+<div class="card">
+<center>
+  <img src="/Users/ryan.vanslingerland/Desktop/chart.png" style="width:100%">
+  <div class="container">
+    <h2><b>How much each Country is Spending on Marine Tech</b></h2> 
+      <p2>Green are nations spending a lot on Marine Tech</p2>
+      <br>
+      <br>
+      <p2>Red are nations NOT spending or spending very little on Marine Tech</p2>
+    </div>
+    </center>
+    </div>
+    </center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>        
+<br>
+ 
+<div style="padding-left:20px">
+  <center><h1>Progress Timeline</h1></center>
+</div>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  background-color: darkgreen;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+</style>
+
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2016</h2>
+      <p> - Oceans, along with coastal and marine resources, play an essential role in human well-being and social and economic development worldwide. They are particularly crucial for people living in coastal communities, who represented 37 per cent of the global population in 2010. Oceans provide livelihoods and tourism benefits, as well as subsistence and income. They also help regulate the global ecosystem by absorbing heat and carbon dioxide from the atmosphere and protecting coastal areas from flooding and erosion. In fact, coastal and marine resources contribute an estimated $28 trillion to the global economy each year through ecosystem services. However, those resources are extremely vulnerable to environmental degradation, overfishing, climate change and pollution. The sustainable use and preservation of marine and coastal ecosystems and their biological diversity is essential to achieving the 2030 Agenda, in particular for small island developing States.
+
+<br>
+<br>
+
+- Pollution of both land and seas is a threat in many coastal regions. In addition, since river basins, marine ecosystems and the atmosphere are all part of hydrological systems, the effects of such pollution are often felt far from their source. In many coastal communities, pollution and eutrophication, which is the presence of excessive nutrients in water, frequently owing to runoff from the land, causing dense plant growth and the death of animal life, are driving detrimental changes. The five large marine ecosystems most at risk from coastal eutrophication, according to a global comparative assessment undertaken in 2016 as part of the Transboundary Water Assessment Programme, are the Bay of Bengal, the East China Sea, the Gulf of Mexico, the North Brazil Shelf and the South China Sea.
+
+<br>
+<br>
+
+- Since the beginning of the industrial revolution, the ocean has absorbed about one third of the carbon dioxide released by human activities, thereby mitigating the full impact of climate change. However, this comes at a steep ecological price, as dissolved carbon dioxide in seawater lowers the pH level of oceans, thereby increasing acidity and changing the biogeochemical carbonate balance. Concerns about ocean acidification, first expressed in the early 1980s, have now been confirmed, and the extent of its impact on marine ecosystems is being investigated.
+
+<br>
+<br>
+
+- Fisheries contribute significantly to global food security, livelihoods and the economy. However, if not sustainably managed, fishing can damage fish habitats. Ultimately, overfishing impairs the functioning of ecosystems and reduces biodiversity, with negative repercussions for sustainable social and economic development. In order to achieve a healthy balance, fish stocks must be maintained within biologically sustainable limits, at or above the abundance level that can produce maximum sustainable yields. Based on an analysis of assessed stocks, the percentage of world marine fish stocks within biologically sustainable levels declined from 90 per cent in 1974 to 69 per cent in 2013. Fortunately, the downward trend has slowed and appears to have stabilized since 2008.
+
+<br>
+<br>
+
+- Biodiverse marine sites require safeguarding to ensure sustainable long-term use of their precious natural resources. Globally, in 2014, 8.4 per cent of the marine environment under national jurisdiction (up to 200 nautical miles from shore) and 0.25 per cent of the marine environment beyond national jurisdiction were under protection. From 2000 to 2016, the share of marine sites around the world that are designated as key biodiversity areas and are completely covered by protected areas increased from 15 per cent to 19 per cent.
+
+<br>
+<br>
+
+Source: Report of the Secretary-General, "Progress towards the Sustainable Development Goals", E/2016/75</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Goal 14. Conserve and sustainably use the oceans, seas and marine resources for sustainable development 18. The increasingly adverse impacts of climate change (including ocean acidification), overfishing and marine pollution are jeopardizing recent gains in protecting portions of the world’s oceans.
+
+<br>
+<br>
+
+- Global trends point to continued deterioration of coastal waters owing to pollution and eutrophication (excessive nutrients in water, frequently a result of run-off from land, which causes dense plant growth and the death of animal life from lack of oxygen). Of the 63 large marine ecosystems evaluated under the Transboundary Waters Assessment Programme, 16 per cent of the ecosystems are in the “high” or “highest” risk categories for coastal eutrophication. They are located mainly in Western Europe, Southern and Eastern Asia, and the Gulf of Mexico.
+
+<br>
+<br>
+
+- Ocean acidification is closely linked to shifts in the carbonate chemistry of the waters, which can lead to a significant weakening of the shells and skeletons of many marine species (such as reef-building corals and shelled molluscs).
+
+<br>
+<br>
+
+- Studies of marine acidity at open ocean and coastal sites around the world have indicated that current levels are often outside preindustrial bounds.
+Overfishing reduces food production, impairs the functioning of ecosystems and reduces biodiversity. The proportion of world marine fish stocks within biologically sustainable levels has declined from 90 per cent in 1974 to 68.6 per cent in 2013. However, the trend has slowed and appears to have stabilized from 2008 to 2013.
+
+<br>
+<br>
+
+- Small-scale fisheries face numerous challenges. In response, about 70 per cent of the respondents to a survey representing 92 countries and the European Union have introduced or developed regulations, policies, laws, plans or strategies specifically targeting small-scale fisheries.
+
+<br>
+<br>
+
+- When effectively managed and well resourced, marine protected areas are important mechanisms for safeguarding ocean life. In 2017, protected areas cover 13.2 per cent of the marine environment under national jurisdiction (up to 200 nautical miles from shore), 0.25 per cent of the marine environment beyond national jurisdiction and 5.3 per cent of the total global ocean area.
+
+<br>
+<br>
+
+Source: Report of the Secretary-General, "Progress towards the Sustainable Development Goals", E/2017/66</p>
+    </div>
+  </div>
+</div>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h2>2018</h2>
+      <p>Advancing the sustainable use and conservation of the oceans continues to require effective strategies and management to combat the adverse effects of overfishing, growing ocean acidification and worsening coastal eutrophication. The expansion of protected areas for marine biodiversity, intensification of research capacity and increases in ocean science funding remain critically important to preserve marine resources.
+
+<br>
+<br>
+
+- The global share of marine fish stocks that are within biologically sustainable levels declined from 90 per cent in 1974 to 69 per cent in 2013.
+
+<br>
+<br>
+
+- Studies at open ocean and coastal sites around the world show that current levels of marine acidity have increased by about 26 per cent on average since the start of the Industrial Revolution. Moreover, marine life is being exposed to conditions outside previously experienced natural variability.
+
+<br>
+<br>
+
+- Global trends point to continued deterioration of coastal waters due to pollution and eutrophication. Without concerted efforts, coastal eutrophication is expected to increase in 20 per cent of large marine ecosystems by 2050.
+
+<br>
+<br>
+
+- As of January 2018, 16 per cent (or over 22 million square kilometres) of marine waters under national jurisdiction—that is, 0 to 200 nautical miles from shore—were covered by protected areas. This is more than double the 2010 coverage level. The mean coverage of marine key biodiversity areas (KBAs) that are protected has also increased—from 30 per cent in 2000 to 44 per cent in 2018.
+
+<br>
+<br>
+
+Source: Report of the Secretary-General, The Sustainable Development Goals Report 2018</p>
+</div>
+  </div>
+</div>
+
+  <div class="container right">
+    <div class="content">
+      <h2>2019</h2>
+      <p>The expansion of protected areas for marine biodiversity and existing policies and treaties that encourage responsible use of ocean resources are still insufficient to combat the adverse effects of overfishing, growing ocean acidification due to climate change and worsening coastal eutrophication. As billions of people depend on oceans for their livelihood and food source and on the transboundary nature of oceans, increased efforts and interventions are needed to conserve and sustainably use ocean resources at all levels.
+
+<br>
+<br>
+
+- Ocean acidification is caused by the uptake of atmospheric CO2 by the ocean, which changes the chemical composition of the seawater. Long-term observations of ocean acidification over the past 30 years have shown an average increase of acidity of 26 per cent since pre-industrial times, and at this rate, an increase of 100 to 150 per cent is predicted by the end of the century, with serious consequences for marine life.
+
+<br>
+<br>
+
+- To achieve sustainable development of fisheries, fish stocks must be maintained at a biologically sustainable level. Analyses reveal that the fraction of world marine fish stocks that are within biologically sustainable levels declined from 90 per cent in 1974 to 66.9 per cent in 2015.
+
+<br>
+<br>
+
+- As of December 2018, over 24 million km2 (17.2 per cent) of waters under national jurisdiction (0–200 nautical miles from a national border) were covered by protected areas, a significant increase from 12 per cent in 2015 and more than double the extent covered in 2010. The global mean percentage of each marine key biodiversity area covered by protected areas increased from 31.2 per cent in 2000 to 44.7 per cent in 2015 and to 45.7 per cent in 2018.
+
+<br>
+<br>
+
+- Illegal, unreported and unregulated fishing remains one of the greatest threats to sustainable fisheries, the livelihoods of those who depend upon them and marine ecosystems. A framework of international instruments has been developed that addresses different aspects of fisheries management. Most countries have taken measures to combat such fishing and have adopted an increasing number of fisheries management instruments in the past decade. For example, the Agreement on Port State Measures to Prevent, Deter and Eliminate Illegal, Unreported and Unregulated Fishing, the first international binding agreement to combat such fishing, entered into force in June 2016. The number of parties to the Agreement has rapidly increased and stood at 58 as of February 2019.
+
+<br>
+<br>
+
+- Small-scale fisheries are present in almost all countries, accounting for more than half of total production on average, in terms of both quantity and value. To promote small-scale fishers’ access to productive resources, services and markets, most countries have developed targeted regulatory and institutional frameworks. However, more than 20 per cent of countries have a low to medium level of implementation of such frameworks, particularly in Oceania and Central and South Asia.
+
+<br>
+<br>
+
+Source: Report of the Secretary-General, Special edition: progress towards the Sustainable Development Goals
+
+</p>
+    </div>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        
+        
+    </body>
+
+    <script>
+    // When the user scrolls the page, execute myFunction 
+window.onscroll = function () {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>  
+
+<a id="About"></a>    
+    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    
+</html>
